@@ -8,6 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["GraphQL_HotChoclate_EFCore/GraphQl.Api.csproj", "GraphQL_HotChoclate_EFCore/"]
+COPY ["DATA.API/GraphQl.DATA.API.csproj", "DATA.API/"]
 RUN dotnet restore "GraphQL_HotChoclate_EFCore/GraphQl.Api.csproj"
 COPY . .
 WORKDIR "/src/GraphQL_HotChoclate_EFCore"
