@@ -41,9 +41,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0" />-->
   </ItemGroup>
 
-
   <ItemGroup>
-    <ProjectReference Include="..\DATA.API\GraphQl.DATA.API.csproj" />
+    <Reference Include="GraphQl.DATA.API">
+      <HintPath>..\..\..\Graphql_Api\GraphQL_HotChoclate_EFCore-master\DATA.API\bin\Debug\net5.0\GraphQl.DATA.API.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
